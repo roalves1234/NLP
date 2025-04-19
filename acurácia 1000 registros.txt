@@ -1,0 +1,30 @@
+1000 REGISTROS
+
+                      precision    recall  f1-score   support
+
+            ambiente       0.00      0.00      0.00         4
+               blogs       0.83      0.36      0.50        14
+             ciencia       0.50      0.33      0.40         3
+             colunas       0.43      0.80      0.56        46
+              comida       0.50      0.50      0.50         2
+           cotidiano       0.62      0.70      0.65        23
+            educacao       0.00      0.00      0.00         2
+          equilibrio       0.00      0.00      0.00         6
+    equilibrioesaude       0.67      1.00      0.80         2
+             esporte       1.00      0.57      0.73         7
+            galerias       0.00      0.00      0.00         1
+           ilustrada       0.73      0.73      0.73        15
+        ilustrissima       1.00      0.25      0.40         4
+             mercado       0.73      0.69      0.71        16
+               mundo       0.91      0.84      0.88        25
+                 nan       0.00      0.00      0.00         1
+             opiniao       0.00      0.00      0.00         3
+      paineldoleitor       0.00      0.00      0.00         1
+               poder       0.81      0.59      0.68        22
+           sobretudo       0.00      0.00      0.00         1
+                 tec       0.00      0.00      0.00         1
+             turismo       0.00      0.00      0.00         1
+
+            accuracy                           0.61       200
+           macro avg       0.40      0.33      0.34       200
+        weighted avg       0.62      0.61      0.59       200

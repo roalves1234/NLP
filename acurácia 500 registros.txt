@@ -1,0 +1,25 @@
+500 REGISTROS
+
+                     precision    recall  f1-score   support
+
+            ambiente       0.00      0.00      0.00         3
+               blogs       1.00      0.71      0.83         7
+             ciencia       0.00      0.00      0.00         1
+             colunas       0.52      0.81      0.64        27
+              comida       0.00      0.00      0.00         1
+           cotidiano       0.45      0.83      0.59         6
+    equilibrioesaude       1.00      0.75      0.86         4
+             esporte       0.00      0.00      0.00         1
+           ilustrada       0.86      0.75      0.80         8
+        ilustrissima       0.00      0.00      0.00         1
+             mercado       0.62      1.00      0.77         5
+               mundo       0.79      0.73      0.76        15
+                 nan       0.00      0.00      0.00         1
+             opiniao       0.00      0.00      0.00         4
+               poder       0.88      0.64      0.74        11
+previdencia-e-futuro       0.00      0.00      0.00         2
+                  tv       0.00      0.00      0.00         3
+
+            accuracy                           0.64       100
+           macro avg       0.36      0.37      0.35       100
+        weighted avg       0.59      0.64      0.60       100
