@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "venv_nlp",
+			"path": "../../../python/venvs/Pós/venv_nlp"
+		},
+		{
+			"name": "NLP",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
