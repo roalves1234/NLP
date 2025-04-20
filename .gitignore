@@ -1,2 +1,7 @@
 *.csv
 /__pycache__
+.venv
+uv.lock
+*.pyc
+*.pkl
+*.zip
