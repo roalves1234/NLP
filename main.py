@@ -22,7 +22,7 @@ X_train, X_test, y_train, y_test = train_test_split( # X = processed_text, y = c
     data_frame['processed_text'], data_frame['categories'], test_size=0.2, random_state=42
 )
 
-print("> Carregamento do modelo BERTimbau")
+print("> Carregamento do modelo BERT")
 tokenizer = AutoTokenizer.from_pretrained("neuralmind/bert-base-portuguese-cased")
 bert = AutoModel.from_pretrained("neuralmind/bert-base-portuguese-cased")
 
