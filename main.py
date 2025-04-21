@@ -23,12 +23,12 @@ X_train, X_test, y_train, y_test = train_test_split( # X = processed_text, y = c
 
 print("> Carregamento do modelo BERTimbau")
 tokenizer = AutoTokenizer.from_pretrained("neuralmind/bert-base-portuguese-cased")
-model = AutoModel.from_pretrained("neuralmind/bert-base-portuguese-cased")
+bert = AutoModel.from_pretrained("neuralmind/bert-base-portuguese-cased")
 
 print("> Geração de embeddings de treino")
-X_train_embeddings = get_bert_embeddings(X_train.tolist(), tokenizer, model)
+X_train_embeddings = get_bert_embeddings(X_train.tolist(), tokenizer, bert)
 print("> Geração de embeddings de teste")
-X_test_embeddings = get_bert_embeddings(X_test.tolist(), tokenizer, model)
+X_test_embeddings = get_bert_embeddings(X_test.tolist(), tokenizer, bert)
 
 # Perguntar ao usuário qual classificador usar
 classifier_choice = input("Escolha o classificador (1-RandomForest ou 2-KNN): ").strip().lower()
