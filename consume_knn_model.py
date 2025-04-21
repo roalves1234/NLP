@@ -20,8 +20,8 @@ while True:
         break
 
     processed_title = preprocess_text(title)
-    embeddings = get_bert_embeddings([processed_title], tokenizer, bert)
-    predicted_category = trained_model.predict(embeddings)[0]
+    embeddings_title = get_bert_embeddings([processed_title], tokenizer, bert)
+    predicted_category = trained_model.predict(embeddings_title)[0]
 
     print(f"A categoria prevista para o título informado é: {predicted_category}")
     input("Pressione Enter para continuar...\n")
