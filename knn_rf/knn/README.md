@@ -181,3 +181,8 @@ knn/
 3. **Balanceamento de Classes**: Implementar técnicas de balanceamento para categorias desbalanceadas
 4. **Outras Métricas de Distância**: Explorar diferentes métricas para o KNN além das padrão
 5. **Redução de Dimensionalidade**: Investigar PCA ou t-SNE para reduzir dimensionalidade dos embeddings
+
+
+## Kaggle
+
+https://www.kaggle.com/code/rafaelcalassara/ufg-llm-ex02-option09?scriptVersionId=235311555

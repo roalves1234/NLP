@@ -222,7 +222,12 @@ def train_knn_model(embedding_files, model_output="modelo_knn.pkl",
     for train_file in tqdm(train_files, desc="Carregando arquivos de treino", unit="arquivo"):
         with open(train_file, 'rb') as f:
             data = pickle.load(f)
+            # append: adiciona o objeto inteiro como um único elemento na lista
+            # Usado aqui porque cada data['embeddings'] é uma matriz numpy que será empilhada depois
             train_embeddings.append(data['embeddings'])
+            
+            # extend: adiciona cada elemento do iterável individualmente à lista
+            # Usado aqui porque data['categories'] é uma lista de categorias que queremos adicionar individualmente
             train_categories.extend(data['categories'])
     
     # Concatenar os embeddings de treinamento
