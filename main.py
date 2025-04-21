@@ -1,3 +1,4 @@
+print("\n")
 print("> Carregamento das bibliotecas")
 import pandas as pandas
 from sklearn.model_selection import train_test_split

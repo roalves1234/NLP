@@ -1,3 +1,4 @@
+print("\n")
 print("> Carregamento das bibliotecas")
 import pickle
 from transformers import AutoTokenizer, AutoModel
@@ -6,7 +7,7 @@ from funcoes import preprocess_text, get_bert_embeddings
 print("> Carregamento do modelo KNN")
 with open("modelo_knn.pkl", "rb") as file:
     trained_model = pickle.load(file)
-
+    
 print("> Carregamento do modelo BERTimbau")
 tokenizer = AutoTokenizer.from_pretrained("neuralmind/bert-base-portuguese-cased")
 bert = AutoModel.from_pretrained("neuralmind/bert-base-portuguese-cased")
