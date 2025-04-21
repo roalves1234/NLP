@@ -13,12 +13,15 @@ print("> Carregamento do modelo BERT")
 tokenizer = AutoTokenizer.from_pretrained("neuralmind/bert-base-portuguese-cased")
 bert = AutoModel.from_pretrained("neuralmind/bert-base-portuguese-cased")
 
-print("> Solicitação do título da notícia ao usuário")
-title = input("Informe o título da notícia: ").strip()
+while True:
+    title = input("\nInforme o título da notícia: ").strip()
+    if title.lower() == '':
+        print("Saindo...")
+        break
 
-print("> Pré-processamento e geração do embedding do título\n")
-processed_title = preprocess_text(title)
-embeddings = get_bert_embeddings([processed_title], tokenizer, bert)
-predicted_category = trained_model.predict(embeddings)[0]
+    processed_title = preprocess_text(title)
+    embeddings = get_bert_embeddings([processed_title], tokenizer, bert)
+    predicted_category = trained_model.predict(embeddings)[0]
 
-print(f"A categoria prevista para o título informado é: {predicted_category}")
+    print(f"A categoria prevista para o título informado é: {predicted_category}")
+    input("Pressione Enter para continuar...\n")
